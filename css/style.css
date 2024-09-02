@@ -1,0 +1,30 @@
+.hidden{
+    display: none;
+}
+
+body{
+    margin: 0;
+}
+
+#appbar{
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    background-color: rgb(245, 245, 242);
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.row{
+    height: 800px;
+    background-color: rgb(255, 247, 173);
+    /*color: red;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row span:last-child{
+    /*background-color: red;*/
+    align-content: center;
+}
