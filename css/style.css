@@ -22,33 +22,93 @@ body{
     /*color: red;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*flex-direction: row;*/
+    /*display: flex;
+    flex-direction: row;
+    flex: 1 1;*/
 }
 
 #to-do{
     background-color: rgb(245, 245, 242);
     border: 1px solid rgb(219, 219, 219);
     border-radius: 5%;
+    /*
     width: 400px;
     height: 400px;
+    */
+    width: 360px;
+    height: 340px;
     margin-top: 50px;
+
+    align-content: center;
+}
+
+#to-do_main {
+    width: 1fr;
+    /*height: 400px;
+    align-content: center;*/
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+#to-do_main2 {
+    width: 1fr;
+    /*height: 400px;
+    align-content: center;*/
+    display: grid;
+    /*grid-template-columns: 1fr 10fr 1fr;*/
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#to-do_main2 div{
+    height: 32px;
+}
+#to-do_main2 div:first-child{
+    width: 1fr;
+    /*height: 400px;
+    align-content: center;*/
+    display: grid;
+    grid-template-columns: 1fr 16fr 1fr;
+    align-items: center;
+}
+#to-do_main2 span{
+    /*display: inline;*/
+    display: inline-block;
+    padding-right: 0px;
+    background-color: black;
+    font-size: 24px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
 }
 
 .row span:first-child{
     /*background-color: red;*/
     /*align-content: end;*/
-    align-items: center;
+    /*align-items: center;*/
+    /*align-content: center;*/
+    /*align-items: flex-end;*/
+
+    /*우측 정렬에 사용함*/
+    display: flex;
+    justify-content: flex-end; /* or space-between; */
+    /*^우측 정렬에 사용함*/
+    
+    padding-right: 50px;
 }
 
 .row span:last-child{
     /*background-color: red;*/
     align-content: center;
+    width: 460px;
 }
 
 .row span:last-child p:first-child{
     /*background-color: red;
     align-content: center;*/
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -57,4 +117,21 @@ body{
     align-content: center;*/
     font-size: 25px;
     font-weight: 300;
+}
+
+li {
+    list-style: none;
+    display: block;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    /*text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-weight: 700;
 }
